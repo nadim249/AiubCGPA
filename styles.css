@@ -9,10 +9,29 @@ body {
 }
 
 /* Header Styling */
-h1 {
+header {
     background-color: #1d4ed8; /* Blue */
     color: white;
     padding: 20px;
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#aiub-logo {
+    width: 40px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between logo and title */
+}
+
+h1 {
     margin: 0;
     font-size: 2rem;
 }
@@ -95,6 +114,23 @@ button:hover {
     color: #1d4ed8; /* Blue text for emphasis */
 }
 
+/* Rounding Note Styling */
+#cgpa-rounding-note {
+    background-color: #fff8e1; /* Light yellow background */
+    border-left: 5px solid #ffb300; /* Yellow left border */
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#cgpa-rounding-note strong {
+    font-weight: bold;
+    color: #ffb300; /* Yellow text for emphasis */
+}
+
 /* Result Display */
 p {
     font-size: 1.1rem;
@@ -130,22 +166,6 @@ p {
 
 .delete-subject:hover {
     background-color: darkred;
-}
-/* Additional Note about CGPA Rounding */
-#cgpa-rounding-note {
-    background-color: #fff8e1; /* Light yellow background */
-    border-left: 5px solid #ffb300; /* Yellow left border */
-    padding: 15px;
-    margin-top: 20px;
-    font-size: 1rem;
-    color: #333;
-    border-radius: 5px;
-    text-align: left;
-}
-
-#cgpa-rounding-note strong {
-    font-weight: bold;
-    color: #ffb300; /* Yellow text for emphasis */
 }
 
 /* Responsive Layout for Mobile and Tablets */

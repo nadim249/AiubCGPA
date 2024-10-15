@@ -4,65 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIUB CGPA Calculator</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>AIUB CGPA Calculator</h1>
-    
-    <!-- Section for Current Semester GPA Calculation -->
+
+    <!-- Header Section with Logo and Title -->
+    <header>
+        <div id="logo-container">
+            <img src="aiublogo.png" alt="AIUB Logo" id="aiub-logo">
+            <h1>AIUB CGPA Calculator</h1>
+        </div>
+    </header>
+
+    <!-- Current Semester CGPA Section -->
     <section id="current-semester-section">
         <h2>Current Semester CGPA Calculation</h2>
 
         <div id="subject-container">
-            <!-- Subject template -->
-            <div class="subject">
-                <input type="text" class="subject-name" placeholder="Subject Name">
-                <input type="number" step="0.01" class="subject-credit" placeholder="Credits">
-                <input type="number" step="0.01" class="subject-gpa" placeholder="GPA (Grade Point)">
-                <button type="button" class="delete-subject" onclick="deleteSubject(this)">Delete</button>
-            </div>
+            <!-- Subject input fields will be dynamically added here -->
         </div>
 
-        <!-- Button to add more subjects -->
+        <!-- Button to Add a New Subject -->
         <button id="add-subject">Add Subject</button>
 
-        <!-- Button to calculate current semester GPA -->
-        <button id="calculate-gpa">Calculate GPA</button>
+        <!-- Button to Calculate CGPA -->
+        <button id="calculate-gpa">Calculate CGPA</button>
 
-        <!-- Display current semester GPA result -->
-        <p id="current-gpa">Your GPA for this semester: </p>
+        <!-- Display Current Semester CGPA -->
+        <p id="current-cgpa">Your Current Semester CGPA: </p>
     </section>
 
-    <hr>
-
+    <!-- Total CGPA Calculation Section -->
     <section id="total-cgpa-section">
         <h2>Total CGPA Calculation</h2>
-    
+
         <label for="past-cgpa">Past CGPA: </label>
         <input type="number" step="0.01" id="past-cgpa" placeholder="Enter Past CGPA">
-    
+
         <label for="past-credits">Total Credits from Past Semesters: </label>
         <input type="number" id="past-credits" placeholder="Enter Total Credits from Past Semesters">
-    
-        <!-- Add Note below the inputs -->
+
+        <!-- Note about Past CGPA -->
         <div id="cgpa-note">
             <p><strong>Note:</strong> You only need to provide the CGPA and total credits from your past semesters. The current semester's CGPA and credits will be automatically synced for calculation.</p>
         </div>
-    
-        <!-- Button to calculate total CGPA -->
+
+        <!-- Button to Calculate Total CGPA -->
         <button id="calculate-total-cgpa">Calculate Total CGPA</button>
-    
-        <!-- Display total CGPA result -->
+
+        <!-- Display Total CGPA Result -->
         <p id="total-cgpa">Your Total CGPA: </p>
-    
-        <!-- Additional note about CGPA rounding -->
+
+        <!-- Additional Note about CGPA Rounding -->
         <div id="cgpa-rounding-note">
-            <p><strong>Note:</strong> Due to rounding, your Total CGPA might show a slight variation of (.001 or .002).</p>
+            <p><strong>Note:</strong> Due to rounding, your Total CGPA might show a slight variation (e.g., 3.001 or 3.002).</p>
         </div>
     </section>
-    
-    
 
-    <script src="script.js"></script> <!-- Link to your JS file -->
+    <script src="script.js"></script>
 </body>
 </html>
