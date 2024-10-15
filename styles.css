@@ -1,0 +1,185 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+    text-align: center;
+}
+
+/* Header Styling */
+h1 {
+    background-color: #1d4ed8; /* Blue */
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading in Sections */
+h2 {
+    color: #1d4ed8; /* Blue */
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Form Label Styling */
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Ensures labels are displayed above inputs */
+    text-align: left;
+}
+
+/* Input Field Styling */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Number Input Specific Styling */
+input[type="number"] {
+    width: 48%;
+    display: inline-block;
+    margin-right: 4%;
+}
+
+input[type="number"]:last-child {
+    margin-right: 0;
+}
+
+/* Button Styling */
+button {
+    background-color: #1d4ed8; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2563eb; /* Darker Blue on hover */
+}
+
+/* Note Styling */
+#cgpa-note {
+    background-color: #eef2ff;
+    border-left: 5px solid #1d4ed8; /* Blue left border */
+    padding: 15px;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 5px;
+}
+
+#cgpa-note strong {
+    font-weight: bold;
+    color: #1d4ed8; /* Blue text for emphasis */
+}
+
+/* Result Display */
+p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1d4ed8; /* Blue */
+}
+
+/* Button Container Styling */
+#subject-container {
+    margin-bottom: 20px;
+}
+
+/* Subject Entry Container */
+.subject {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.subject input {
+    width: 30%;
+}
+
+.delete-subject {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.delete-subject:hover {
+    background-color: darkred;
+}
+/* Additional Note about CGPA Rounding */
+#cgpa-rounding-note {
+    background-color: #fff8e1; /* Light yellow background */
+    border-left: 5px solid #ffb300; /* Yellow left border */
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#cgpa-rounding-note strong {
+    font-weight: bold;
+    color: #ffb300; /* Yellow text for emphasis */
+}
+
+/* Responsive Layout for Mobile and Tablets */
+@media (max-width: 768px) {
+    .subject {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subject input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    input[type="number"] {
+        width: 100%; /* Stack inputs vertically on smaller screens */
+        margin-right: 0;
+    }
+
+    #add-subject,
+    #calculate-gpa,
+    #calculate-total-cgpa {
+        width: 100%;
+    }
+}
+
+/* Margin Adjustments for Main Sections */
+section {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Container for whole page */
+#total-cgpa-section,
+#current-semester-section {
+    margin-bottom: 30px;
+}
