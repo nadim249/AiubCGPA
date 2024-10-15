@@ -17,7 +17,7 @@ function calculateCurrentSemesterGPA() {
     if (totalCredits > 0) {
         let gpa = totalGradePoints / totalCredits;
         gpa = roundToTwoDecimals(gpa);
-        document.getElementById('current-gpa').textContent = `Your GPA for this semester: ${gpa}`;
+        document.getElementById('current-cgpa').textContent = `Your Current Semester GPA: ${gpa}`;
         return gpa; // Return GPA to use in total CGPA calculation
     } else {
         alert("Please enter valid credits and GPAs for all subjects.");
@@ -29,7 +29,7 @@ function calculateCurrentSemesterGPA() {
 function calculateTotalCGPA() {
     const pastCGPA = parseFloat(document.getElementById('past-cgpa').value);
     const pastCredits = parseFloat(document.getElementById('past-credits').value);
-    const currentGPA = calculateCurrentSemesterGPA();
+    const currentGPA = calculateCurrentSemesterGPA(); // Get the current GPA
     const currentCredits = getCurrentSemesterCredits();
 
     if (!isNaN(pastCGPA) && !isNaN(pastCredits) && currentCredits > 0) {
